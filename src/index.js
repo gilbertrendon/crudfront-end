@@ -94,9 +94,4 @@ app.listen(app.get('port'), () => {
 });
 
 
-//app.use(require('list.js'));
-// var http = require('http');
-// http.createServer(function (req, res) {
-//   res.write('Hello World!'); 
-//   res.end();
-// }).listen(8080);
+app.use(express.static("./"));

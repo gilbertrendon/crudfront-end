@@ -1,0 +1,54 @@
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Login para 1 usuario</title>
+</head>
+
+<body>
+<SCRIPT  language=JavaScript> 
+function go(){
+        document.form.submit(); 
+} 
+function go1(){
+        document.form1.submit(); 
+} 
+function go2(){
+        document.form2.submit(); 
+} 
+</SCRIPT> 
+<p></p>
+<div>
+</div>
+<p></p>
+<FORM name=form action="http://localhost:3000/api/cars">
+<INPUT onclick=go() type=button value=Lista>
+</FORM> 
+  <p></p>
+  <div>
+  </div>
+  <p></p>
+<FORM name=form1 action="http://localhost:3000/api/carbyid/1">
+<INPUT onclick=go1() type=button value=Vehiculo>
+</FORM> 
+  <p></p>
+  <div>
+  </div>
+  <p></p>
+<FORM name=form2 action="http://localhost:3000/api/delcarbyid/1">
+<INPUT onclick=go2() type=button value=Borrar>
+</FORM> 
+  <p></p>
+  <div>
+  </div>
+  <p></p>
+<FORM name=form3 action="">
+<INPUT onclick=go() type=button value=Insertar>
+</FORM> 
+</body>
+</html>

@@ -13,4 +13,7 @@ insert into car(id, aumento, finsercion, habilitado, img, valor)values (444, 0.0
 --Borrar carro por id: http://localhost:3000/api/delcarbyid/222
 --Donde 222 es el id del carro a eliminar
 
+--Cuando se está en la vista inicial el empleado por defecto es el admin
+--la contraseña del admin es 1234
+
 
