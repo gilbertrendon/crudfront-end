@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Login para 1 usuario</title>
+</head>
+
+<body>
+<SCRIPT  language=JavaScript> 
+function go(){
+    //import { Car } from 'car'
+  //porque car.ts es donde está la clase Car
+  //export const Vehiculo: Car = 
+  obj = {
+  id: document.form.id.value,
+  aumento: document.form.aumento.value,
+  finsercion: document.form.finsercion.value,
+  habilitado: document.form.habilitado.value,
+  img: document.form.img.value,
+  valor: document.form.valor.value,
+  modelo: document.form.modelo.value
+}
+
+//Ahora sigue hacer una inserción desde js api rest
+//http://localhost:8085/addcar
+
+
+
+if (document.form.password.value=='1234' && document.form.login.value=='admin'){ 
+        document.form.submit(); 
+    } 
+    else{ 
+         alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
+    } 
+} 
+</SCRIPT> 
+<FORM name=form action="http://localhost:3000/Operations.html">
+
+<P>Id vehículo:    <INPUT type=text name=id> 
+<P>Aumento: <INPUT type=text name=aumento>
+<P>Fecha de inserción: <INPUT type=text name=finsercion>
+<P>Habilitado: <INPUT type=checkbox name=habilitado>
+<P>Imagen: <INPUT type=text name=img>
+<P>Valor: <INPUT type=text name=valor>
+<P>Modelo: <INPUT type=text name=modelo> 
+
+
+<INPUT onclick=go() type=button value=Acceder>
+
+</FORM> 
+</body>
+</html>
